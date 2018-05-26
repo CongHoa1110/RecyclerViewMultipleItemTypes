@@ -130,4 +130,9 @@ public class Spacu implements Parcelable {
         parcel.writeString(mNumberPhone);
         parcel.writeInt(mAvata);
     }
+
+    @Override
+    public String toString() {
+        return "Spacu{" + "mName='" + mName + '\'' + ", mAddress='" + mAddress + '\'' + ", mNumberPhone='" + mNumberPhone + '\'' + ", mAvata=" + mAvata + ", type=" + type + '}';
+    }
 }

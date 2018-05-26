@@ -28,7 +28,6 @@ public abstract class BaseAdapter<T, WH extends RecyclerView.ViewHolder> extends
         try {
             if (holder.itemView != null){
                 if (onItemSelected != null){
-
                     holder.itemView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -59,7 +58,7 @@ public abstract class BaseAdapter<T, WH extends RecyclerView.ViewHolder> extends
     }
 
     @Override
-    public void onViewRecycled(WH holder) {
+    public void onViewRecycled( WH holder) {
         super.onViewRecycled(holder);
     }
 

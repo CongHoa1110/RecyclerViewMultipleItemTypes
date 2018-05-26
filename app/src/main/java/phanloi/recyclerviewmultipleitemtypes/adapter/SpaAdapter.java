@@ -8,15 +8,12 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import phanloi.recyclerviewmultipleitemtypes.R;
-import phanloi.recyclerviewmultipleitemtypes.model.Header;
 import phanloi.recyclerviewmultipleitemtypes.model.Spacu;
-import phanloi.recyclerviewmultipleitemtypes.viewholder.BaseViewHolder;
-import phanloi.recyclerviewmultipleitemtypes.viewholder.CustomItemViewHolder;
 import phanloi.recyclerviewmultipleitemtypes.viewholder.HeaderViewHolder;
-import phanloi.recyclerviewmultipleitemtypes.viewholder.ImageItemViewHolder;
+
 import phanloi.recyclerviewmultipleitemtypes.viewholder.ImageViewHolder;
 import phanloi.recyclerviewmultipleitemtypes.viewholder.SpaViewholder;
-import phanloi.recyclerviewmultipleitemtypes.viewholder.TextItemViewHolder;
+
 
 public class SpaAdapter extends BaseAdapter<Spacu,RecyclerView.ViewHolder> {
    public static final int ITEM_HEADER = 0;
@@ -27,6 +24,7 @@ public class SpaAdapter extends BaseAdapter<Spacu,RecyclerView.ViewHolder> {
     public SpaAdapter(Activity activity, List<Spacu> data) {
         super(activity, data);
     }
+
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -72,5 +70,7 @@ public class SpaAdapter extends BaseAdapter<Spacu,RecyclerView.ViewHolder> {
     public int getItemViewType(int position) {
         return data.get(position).getType();
     }
+
+
 }
 
