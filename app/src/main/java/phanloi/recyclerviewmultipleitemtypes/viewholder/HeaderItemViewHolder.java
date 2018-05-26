@@ -27,7 +27,6 @@ public class HeaderItemViewHolder extends BaseItemViewHolder<HeaderItem> {
     @Override
     public void setItem(HeaderItem item) {
         super.setItem(item);
-
         mTxtHeader.setText(item.getHeader().getString());
     }
 }
